@@ -268,7 +268,7 @@ void feh_wm_gen_bg_script(char* fil, int centered, int scaled, int filled, int u
 	else
 		exec_method = cmdargv[0];
 
-	path = estrjoin("/", home, ".fehbg", NULL);
+	path = estrjoin("/", home, ".local/share/fehbg", NULL);
 
 	if ((fp = fopen(path, "w")) == NULL) {
 		weprintf("Can't write to %s", path);
